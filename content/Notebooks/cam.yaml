@@ -1,0 +1,94 @@
+name: cam
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - mhoelzl
+  - fastai
+  - defaults
+dependencies:
+  - python[version='>=3.10']
+  # - cuda==11.7
+  # - cudnn
+  - appdirs
+  - autopep8
+  - bandit
+  - black
+  - blackd
+  - bump2version
+  - click
+  - cookiecutter
+  - datasets
+  - fastai
+  - fastapi
+  - ffmpeg
+  - flake8
+  - hypothesis
+  - ipykernel
+  - ipywidgets
+  - kaggle
+  - lark
+  - mypy
+  - jinja2
+  - jupyter
+  - jupyter_nbextensions_configurator
+  - jupytext
+  - matplotlib
+  - nbconvert
+  - nbex
+  - numba
+  - numpy
+  - openpyxl
+  - pandas
+  - papermill
+  - pdoc
+  - pip
+  - pyarrow
+  - pydantic
+  - pytest
+  - pytest-cov
+  - python-build
+  - python-dotenv
+  - pytorch
+  - pytorch-cuda==11.7
+  - requests
+  - rise
+  # Packages needed for rise to install properly with the breaking change introduced
+  # by pip version 22 (see https://github.com/pypa/packaging/issues/644)
+  - jsonschema
+  - webcolors
+  - uri-template
+  - rfc3986-validator
+  - rfc3339-validator
+  - jsonpointer
+  - isoduration
+  - fqdn
+  # End rise packages
+  - scikit-build
+  - scikit-learn
+  - scipy
+  - seaborn
+  - skorch
+  - spacy[version='>=3']
+  - sphinx
+  - statsmodels
+  - streamlit
+  - tensorboard
+  - tensorflow
+  - timm
+  - tox
+  - tox-conda[version='>=0.10']
+  - transformers[version='>=3']
+  - typer
+  - uvicorn
+  # For Jupyterlite. Remove as soon as jupyterlite is available from conda
+  - doit
+  - cloudpickle
+  - json5
+  - jupyterlab[version='<4']
+  - jupyterlab_server
+  - jupyter-server-mathjax
+  - python-libarchive-c
+  #
+  - pip:
+      - jupyterlite[all]
